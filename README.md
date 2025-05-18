@@ -38,6 +38,10 @@ see steps below
 
 - Finally, the outer query returns the total number of customers in each category, along with the average monthly transaction count for that group. I also used the FIELD() function to ensure the results are ordered logically from highest to lowest frequency category.
 
+**Challenges:**
+
+my main challenge here was having to calculate averages twice which makes me doubt how accurate the analysis would be. my approach will be to count all transactions by customers by month, then segment these total counts into high , medium , low, then calculating averages for each segment will come last.
+
 **Assessment_Q3**
 
 To get customers who have not made transactions in over a year, the last transaction date and current data were instrumental in getting accurate results. also, adding a filter transaction_status = success ensured we only picked rows where there were successful transactions
